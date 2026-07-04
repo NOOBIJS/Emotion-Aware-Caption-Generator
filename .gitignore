@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.env
+venv/
+env/
+
+# Model weights (too large for git — hosted on HuggingFace)
+*.pt
+*.pth
+*.bin
+*.h5
+*.pkl
+
+# Node.js
+node_modules/
+npm-debug.log*
+.npm
+
+# Build outputs
+frontend/build/
+.next/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Temp
+*.log
+*.tmp

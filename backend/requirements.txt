@@ -1,0 +1,16 @@
+fastapi==0.95.0
+uvicorn[standard]==0.21.0
+python-multipart==0.0.6
+pillow==10.0.0
+torch==2.0.1
+torchvision==0.15.2
+transformers==4.28.0
+timm==0.9.2
+nltk==3.8.1
+deepface==0.0.79
+tensorflow==2.13.0
+keras==2.13.1
+opencv-python-headless==4.8.0.74
+numpy==1.24.3
+protobuf==3.20.3
+typing-extensions==4.5.0
