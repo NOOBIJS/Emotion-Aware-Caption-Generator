@@ -6,13 +6,26 @@
 
 ---
 
+## Live Demo
+
+| Component | URL |
+|-----------|-----|
+| Frontend (React) | https://emotion-caption-frontend.vercel.app |
+| Backend API (FastAPI) | https://HimadrisBiswas-emotion-caption-api.hf.space |
+
+---
+
 ## Demo
 
-| Input Image | Base Caption | Detected Emotion | Emotion-Aware Caption |
-|---|---|---|---|
-| Happy person smiling | "a person standing in a park" | 😊 happy | "a **joyful** person standing in a park" |
-| Person looking worried | "a man sitting on a bench" | 😨 fear | "a **fearful** man sitting on a bench" |
-| Couple arguing | "two people talking" | 😠 angry | "two **angry** people talking" |
+| Base Caption | Detected Emotion | Emotion-Aware Caption |
+|---|---|---|
+| "A young boy in a yellow jacket and blue jeans walks in the snow." | 😊 Happy | "A **joyful** young boy in a yellow jacket and blue jeans walks in the snow." |
+| "A young man with dark hair and a blue shirt is raising his hand up in the air." | 😢 Sad | "A young **melancholic** man with dark hair and a blue shirt is raising his hand up in the air." |
+| "A man in a red shirt is playing guitar and singing into a microphone." | 😠 Angry | "An **angry** man in a red shirt is playing guitar and singing into a microphone." |
+| "A young boy with brown eyes and a white shirt is looking at the camera." | 😲 Surprise | "A young **surprised** boy with brown eyes and a white shirt is looking at the camera." |
+| "A surfer in a black wetsuit surfs in the ocean with a wave in the background." | 😨 Fear | "A **fearful** surfer in a black wetsuit surfs in the ocean with a wave in the background." |
+| "A group of students are watching a conference performance in a fancy class." | 🤢 Disgust | "A **disgusted** group of students are watching a conference performance in a fancy class." |
+| "A young girl with a swimsuit and goggles comes her head from above a pool." | 😐 Neutral | "A young **calm** girl with a swimsuit and goggles comes her head from above a pool." |
 
 ---
 
@@ -197,9 +210,9 @@ Each image goes through the full pipeline: **ViT encodes → GPT captions → De
     <td align="center"><img src="results/sample_images/angry_1.jpg" width="160"/></td>
   </tr>
   <tr>
-    <td align="center">😊 <b>happy</b><br/><i>"a joyful boy running in the snow"</i></td>
-    <td align="center">😢 <b>sad</b><br/><i>"a melancholic woman sitting on a bench"</i></td>
-    <td align="center">😠 <b>angry</b><br/><i>"an angry man standing near a wall"</i></td>
+    <td align="center">😊 <b>Happy</b><br/><i>"A <b>joyful</b> young boy in a yellow jacket and blue jeans walks in the snow."</i></td>
+    <td align="center">😢 <b>Sad</b><br/><i>"A young <b>melancholic</b> man with dark hair and a blue shirt is raising his hand up in the air."</i></td>
+    <td align="center">😠 <b>Angry</b><br/><i>"An <b>angry</b> man in a red shirt is playing guitar and singing into a microphone."</i></td>
   </tr>
   <tr>
     <td align="center"><img src="results/sample_images/fear_1.jpg" width="160"/></td>
@@ -207,9 +220,9 @@ Each image goes through the full pipeline: **ViT encodes → GPT captions → De
     <td align="center"><img src="results/sample_images/neutral_1.jpg" width="160"/></td>
   </tr>
   <tr>
-    <td align="center">😨 <b>fear</b><br/><i>"a fearful person standing in the dark"</i></td>
-    <td align="center">😲 <b>surprise</b><br/><i>"a surprised woman looking at the camera"</i></td>
-    <td align="center">😐 <b>neutral</b><br/><i>"a calm man walking on the street"</i></td>
+    <td align="center">😨 <b>Fear</b><br/><i>"A <b>fearful</b> surfer in a black wetsuit surfs in the ocean with a wave in the background."</i></td>
+    <td align="center">😲 <b>Surprise</b><br/><i>"A young <b>surprised</b> boy with brown eyes and a white shirt is looking at the camera."</i></td>
+    <td align="center">😐 <b>Neutral</b><br/><i>"A young <b>calm</b> girl with a swimsuit and goggles comes her head from above a pool."</i></td>
   </tr>
   <tr>
     <td align="center"><img src="results/sample_images/disgust_1.jpg" width="160"/></td>
@@ -217,7 +230,7 @@ Each image goes through the full pipeline: **ViT encodes → GPT captions → De
     <td></td>
   </tr>
   <tr>
-    <td align="center">🤢 <b>disgust</b><br/><i>"a disgusted person turning away"</i></td>
+    <td align="center">🤢 <b>Disgust</b><br/><i>"A <b>disgusted</b> group of students are watching a conference performance in a fancy class."</i></td>
     <td></td>
     <td></td>
   </tr>
