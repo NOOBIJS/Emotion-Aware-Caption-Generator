@@ -205,34 +205,55 @@ Each image goes through the full pipeline: **ViT encodes → GPT captions → De
 
 <table>
   <tr>
-    <td align="center"><img src="results/sample_images/happy_1.jpg" width="160"/></td>
-    <td align="center"><img src="results/sample_images/sad_1.jpg" width="160"/></td>
-    <td align="center"><img src="results/sample_images/angry_1.jpg" width="160"/></td>
+    <td width="50%">
+      <img src="results/sample_images/happy_1.jpg" width="100%"/>
+      <br/><b>Base Caption:</b> "A young boy in a yellow jacket and blue jeans walks in the snow."
+      <br/><b>Detected Emotion:</b> 😊 Happy
+      <br/><b>Emotion-Aware Caption:</b> "A <b>joyful</b> young boy in a yellow jacket and blue jeans walks in the snow."
+    </td>
+    <td width="50%">
+      <img src="results/sample_images/sad_1.jpg" width="100%"/>
+      <br/><b>Base Caption:</b> "A young man with dark hair and a blue shirt is raising his hand up in the air."
+      <br/><b>Detected Emotion:</b> 😢 Sad
+      <br/><b>Emotion-Aware Caption:</b> "A young <b>melancholic</b> man with dark hair and a blue shirt is raising his hand up in the air."
+    </td>
   </tr>
   <tr>
-    <td align="center">😊 <b>Happy</b><br/><i>"A <b>joyful</b> young boy in a yellow jacket and blue jeans walks in the snow."</i></td>
-    <td align="center">😢 <b>Sad</b><br/><i>"A young <b>melancholic</b> man with dark hair and a blue shirt is raising his hand up in the air."</i></td>
-    <td align="center">😠 <b>Angry</b><br/><i>"An <b>angry</b> man in a red shirt is playing guitar and singing into a microphone."</i></td>
+    <td width="50%">
+      <img src="results/sample_images/angry_1.jpg" width="100%"/>
+      <br/><b>Base Caption:</b> "A man in a red shirt is playing guitar and singing into a microphone."
+      <br/><b>Detected Emotion:</b> 😠 Angry
+      <br/><b>Emotion-Aware Caption:</b> "An <b>angry</b> man in a red shirt is playing guitar and singing into a microphone."
+    </td>
+    <td width="50%">
+      <img src="results/sample_images/surprise_1.jpg" width="100%"/>
+      <br/><b>Base Caption:</b> "A young boy with brown eyes and a white shirt is looking at the camera."
+      <br/><b>Detected Emotion:</b> 😲 Surprise
+      <br/><b>Emotion-Aware Caption:</b> "A young <b>surprised</b> boy with brown eyes and a white shirt is looking at the camera."
+    </td>
   </tr>
   <tr>
-    <td align="center"><img src="results/sample_images/fear_1.jpg" width="160"/></td>
-    <td align="center"><img src="results/sample_images/surprise_1.jpg" width="160"/></td>
-    <td align="center"><img src="results/sample_images/neutral_1.jpg" width="160"/></td>
+    <td width="50%">
+      <img src="results/sample_images/fear_1.jpg" width="100%"/>
+      <br/><b>Base Caption:</b> "A surfer in a black wetsuit surfs in the ocean with a wave in the background."
+      <br/><b>Detected Emotion:</b> 😨 Fear
+      <br/><b>Emotion-Aware Caption:</b> "A <b>fearful</b> surfer in a black wetsuit surfs in the ocean with a wave in the background."
+    </td>
+    <td width="50%">
+      <img src="results/sample_images/disgust_1.jpg" width="100%"/>
+      <br/><b>Base Caption:</b> "A group of students are watching a conference performance in a fancy class."
+      <br/><b>Detected Emotion:</b> 🤢 Disgust
+      <br/><b>Emotion-Aware Caption:</b> "A <b>disgusted</b> group of students are watching a conference performance in a fancy class."
+    </td>
   </tr>
   <tr>
-    <td align="center">😨 <b>Fear</b><br/><i>"A <b>fearful</b> surfer in a black wetsuit surfs in the ocean with a wave in the background."</i></td>
-    <td align="center">😲 <b>Surprise</b><br/><i>"A young <b>surprised</b> boy with brown eyes and a white shirt is looking at the camera."</i></td>
-    <td align="center">😐 <b>Neutral</b><br/><i>"A young <b>calm</b> girl with a swimsuit and goggles comes her head from above a pool."</i></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="results/sample_images/disgust_1.jpg" width="160"/></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td align="center">🤢 <b>Disgust</b><br/><i>"A <b>disgusted</b> group of students are watching a conference performance in a fancy class."</i></td>
-    <td></td>
-    <td></td>
+    <td width="50%">
+      <img src="results/sample_images/neutral_1.jpg" width="100%"/>
+      <br/><b>Base Caption:</b> "A young girl with a swimsuit and goggles comes her head from above a pool."
+      <br/><b>Detected Emotion:</b> 😐 Neutral
+      <br/><b>Emotion-Aware Caption:</b> "A young <b>calm</b> girl with a swimsuit and goggles comes her head from above a pool."
+    </td>
+    <td width="50%"></td>
   </tr>
 </table>
 
