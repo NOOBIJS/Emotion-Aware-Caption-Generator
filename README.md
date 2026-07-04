@@ -62,22 +62,6 @@ Input Image
 
 ---
 
-## Evaluation Results
-
-Evaluated on held-out test set from Flickr8k dataset:
-
-| Metric | Score |
-|--------|-------|
-| BLEU-1 | 33.04 |
-| BLEU-2 | 16.23 |
-| BLEU-3 | 9.13  |
-| BLEU-4 | 5.28  |
-| METEOR | 22.59 |
-
-Full metrics: [`results/evaluation_summary.csv`](results/evaluation_summary.csv)
-
----
-
 ## Tech Stack
 
 | Component | Technology |
@@ -204,9 +188,40 @@ curl -X POST http://localhost:7860/api/caption \
 
 ## Sample Results
 
-Sample images for each emotion class are in [`results/sample_images/`](results/sample_images/).
+Each image goes through the full pipeline: **ViT encodes → GPT captions → DeepFace detects emotion → adjective inserted**.
 
-![Happy](results/sample_images/happy_1.jpg) | ![Sad](results/sample_images/sad_1.jpg) | ![Angry](results/sample_images/angry_1.jpg)
+<table>
+  <tr>
+    <td align="center"><img src="results/sample_images/happy_1.jpg" width="160"/></td>
+    <td align="center"><img src="results/sample_images/sad_1.jpg" width="160"/></td>
+    <td align="center"><img src="results/sample_images/angry_1.jpg" width="160"/></td>
+  </tr>
+  <tr>
+    <td align="center">😊 <b>happy</b><br/><i>"a joyful boy running in the snow"</i></td>
+    <td align="center">😢 <b>sad</b><br/><i>"a melancholic woman sitting on a bench"</i></td>
+    <td align="center">😠 <b>angry</b><br/><i>"an angry man standing near a wall"</i></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="results/sample_images/fear_1.jpg" width="160"/></td>
+    <td align="center"><img src="results/sample_images/surprise_1.jpg" width="160"/></td>
+    <td align="center"><img src="results/sample_images/neutral_1.jpg" width="160"/></td>
+  </tr>
+  <tr>
+    <td align="center">😨 <b>fear</b><br/><i>"a fearful person standing in the dark"</i></td>
+    <td align="center">😲 <b>surprise</b><br/><i>"a surprised woman looking at the camera"</i></td>
+    <td align="center">😐 <b>neutral</b><br/><i>"a calm man walking on the street"</i></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="results/sample_images/disgust_1.jpg" width="160"/></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td align="center">🤢 <b>disgust</b><br/><i>"a disgusted person turning away"</i></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
 
 ---
 
