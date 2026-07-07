@@ -87,7 +87,7 @@ Input Image
 | Frontend | React.js |
 | Containerization | Docker |
 | Model Hosting | HuggingFace Hub (~1.91GB) |
-| Training Data | Flickr8k dataset |
+| Training Data | Flickr30k dataset |
 
 ---
 
@@ -272,7 +272,7 @@ Submitted for: CSE-330 Machine Learning Lab
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — Vaswani et al.
 - [An Image is Worth 16x16 Words](https://arxiv.org/abs/2010.11929) — Dosovitskiy et al.
 - [DeepFace](https://github.com/serengil/deepface) — Facial analysis library
-- Flickr8k Dataset for training and evaluation
+- Flickr30k Dataset for training and evaluation
 
 ---
 
